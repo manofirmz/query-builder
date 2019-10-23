@@ -1,0 +1,21 @@
+{
+    "name": "manofirmz/query-builder", 
+    "description": "Provides a query builder using DSL for MySQL", 
+    "authors": [
+        {
+            "name": "Rafael Felipe aka Manofirmz", 
+            "email": "manofirmz@gmail.com"
+        }
+    ], 
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }, 
+    "autoload": {
+        "psr-4": {
+            "QueryBuilder\\": [
+                "src/", 
+                "tests/"
+            ]
+        }
+    }
+}
