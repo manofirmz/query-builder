@@ -5,10 +5,11 @@ namespace QueryBuilder\Statement;
 
 use QueryBuilder\Statement\DeleteInterface;
 use QueryBuilder\Expression\ExpressionInterface;
+use QueryBuilder\Expression\ParamsInterface;
 use \InvalidArgumentException;
 use \RuntimeException;
 
-class Delete implements DeleteInterface
+class Delete implements DeleteInterface, ParamsInterface
 {
     /**
      * @var string

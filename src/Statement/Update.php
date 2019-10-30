@@ -5,10 +5,11 @@ namespace QueryBuilder\Statement;
 
 use QueryBuilder\Statement\UpdateInterface;
 use QueryBuilder\Expression\ExpressionInterface;
+use QueryBuilder\Expression\ParamsInterface;
 use \InvalidArgumentException;
 use \RuntimeException;
 
-class Update implements UpdateInterface
+class Update implements UpdateInterface, ParamsInterface
 {
     /**
      * @var string

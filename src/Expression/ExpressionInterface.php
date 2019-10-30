@@ -10,11 +10,6 @@ namespace QueryBuilder\Expression;
 interface ExpressionInterface
 {
     /**
-     * @return array
-     */
-    public function getParams();
-
-    /**
      * @return string
      */
     public function getExpression();

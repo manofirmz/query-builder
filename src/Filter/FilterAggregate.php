@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace QueryBuilder\Filter;
 
 use QueryBuilder\Expression\ExpressionAggregateInterface;
+use QueryBuilder\Expression\ParamsInterface;
 use QueryBuilder\Expression\ExpressionInterface;
 use QueryBuilder\Operator\Logic;
 use \SplObjectStorage;
@@ -14,7 +15,7 @@ use \SplObjectStorage;
  * @package manofirmz/query-builder
  * @author Rafael Felipe aka Manofirmz
  */
-class FilterAggregate implements ExpressionAggregateInterface
+class FilterAggregate implements ExpressionAggregateInterface, ParamsInterface
 {
     /**
      * @var SplObjectStorage

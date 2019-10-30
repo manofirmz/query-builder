@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace QueryBuilder\Filter;
 
 use QueryBuilder\Expression\ExpressionInterface;
+use QueryBuilder\Expression\ParamsInterface;
 use QueryBuilder\Operator\Logic;
 use \InvalidArgumentException;
 
@@ -13,7 +14,7 @@ use \InvalidArgumentException;
  * @package manofirmz/query-builder
  * @author Rafael Felipe aka Manofirmz
  */
-class Filter implements ExpressionInterface
+class Filter implements ExpressionInterface, ParamsInterface
 {
     /**
      * @var string
